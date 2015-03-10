@@ -35,7 +35,13 @@ public class Flipper : MonoBehaviour {
 	}
 	
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Space)) {
+		bool touch = false;
+
+		foreach (Touch t in Input.touches) {
+			if (t.phase == TouchPhase.Began) touch = true;
+		}
+
+		if (Input.GetKeyDown(KeyCode.Space) || touch) {
 			if (!isFlipping) flipOnFixed = true;
 		}
 	}

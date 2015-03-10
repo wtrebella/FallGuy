@@ -86,7 +86,7 @@ GameObject:
   - 54: {fileID: 13969694}
   - 59: {fileID: 13969693}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,7 +129,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -142,7 +142,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 13969691}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
   flipperType: 0
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 3
+  pointValue: 1
   torque: 150
 --- !u!1 &14523253
 GameObject:
@@ -178,7 +178,7 @@ GameObject:
   - 54: {fileID: 14523256}
   - 59: {fileID: 14523255}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,7 +221,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -234,7 +234,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 14523253}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -256,7 +256,7 @@ MonoBehaviour:
   flipperType: 0
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 9
+  pointValue: 1
   torque: 150
 --- !u!1 &33833849
 GameObject:
@@ -270,7 +270,7 @@ GameObject:
   - 54: {fileID: 33833852}
   - 59: {fileID: 33833851}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -313,7 +313,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -326,7 +326,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 33833849}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -348,7 +348,7 @@ MonoBehaviour:
   flipperType: 0
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 8
+  pointValue: 1
   torque: 150
 --- !u!1 &43343833
 GameObject:
@@ -452,7 +452,7 @@ Light:
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
-    m_Strength: 1
+    m_Strength: .280000001
     m_Bias: .0500000007
     m_Softness: 4
     m_SoftnessFade: 1
@@ -551,6 +551,122 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 58408880}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &94820546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 94820547}
+  - 222: {fileID: 94820550}
+  - 114: {fileID: 94820549}
+  - 114: {fileID: 94820548}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &94820547
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94820546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 983674644}
+  m_Father: {fileID: 429459921}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 142.100006, y: -51.9500122}
+  m_SizeDelta: {x: 229.399994, y: 71.0999756}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &94820548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94820546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 94820549}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 109284124}
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &94820549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94820546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &94820550
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94820546}
 --- !u!1 &109284123
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +719,7 @@ GameObject:
   - 54: {fileID: 117289975}
   - 59: {fileID: 117289974}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,7 +762,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -659,7 +775,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 117289972}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -695,7 +811,7 @@ GameObject:
   - 65: {fileID: 123085922}
   - 23: {fileID: 123085921}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,8 +824,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 123085919}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 279748583}
   m_RootOrder: 0
@@ -902,7 +1018,7 @@ GameObject:
   - 54: {fileID: 279748585}
   - 59: {fileID: 279748584}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -945,7 +1061,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -958,7 +1074,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279748582}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -980,7 +1096,7 @@ MonoBehaviour:
   flipperType: 1
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 9
+  pointValue: 1
   torque: 150
 --- !u!1 &280112325
 GameObject:
@@ -1096,7 +1212,7 @@ GameObject:
   - 65: {fileID: 312721894}
   - 23: {fileID: 312721893}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1109,8 +1225,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 312721891}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1841344814}
   m_RootOrder: 0
@@ -1252,6 +1368,79 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 329619184}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &342020408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 342020412}
+  - 114: {fileID: 342020411}
+  - 114: {fileID: 342020410}
+  - 114: {fileID: 342020409}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &342020409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342020408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1997211142, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowActivationOnStandalone: 0
+--- !u!114 &342020410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342020408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_AllowActivationOnMobileDevice: 0
+--- !u!114 &342020411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342020408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &342020412
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342020408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &359794909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,7 +1522,7 @@ GameObject:
   - 65: {fileID: 369633870}
   - 23: {fileID: 369633869}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1346,8 +1535,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 369633867}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1967563404}
   m_RootOrder: 0
@@ -1463,7 +1652,7 @@ GameObject:
   - 65: {fileID: 394433560}
   - 23: {fileID: 394433559}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1476,8 +1665,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 394433557}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.35000002, y: -.860000014, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 13969692}
   m_RootOrder: 0
@@ -1532,7 +1721,7 @@ GameObject:
   - 65: {fileID: 411666036}
   - 23: {fileID: 411666035}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1545,8 +1734,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 411666033}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.35000002, y: -.860000014, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1983403080}
   m_RootOrder: 0
@@ -1589,6 +1778,134 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 411666033}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &422511002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 422511003}
+  - 33: {fileID: 422511008}
+  - 65: {fileID: 422511007}
+  - 23: {fileID: 422511006}
+  - 54: {fileID: 422511005}
+  - 59: {fileID: 422511004}
+  - 114: {fileID: 422511009}
+  m_Layer: 10
+  m_Name: Left Leg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &422511003
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422511002}
+  m_LocalRotation: {x: 0, y: 0, z: .933580458, w: .35836786}
+  m_LocalPosition: {x: -.444900006, y: -.8671, z: 0}
+  m_LocalScale: {x: .400000006, y: 1.25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 601039536}
+  m_RootOrder: 5
+--- !u!59 &422511004
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422511002}
+  m_ConnectedBody: {fileID: 1171344930}
+  m_Anchor: {x: 0, y: -.400000006, z: 0}
+  m_Axis: {x: 0, y: 0, z: -1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -.196150929, y: -.387535691, z: 0}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -10
+    max: 10
+    minBounce: 0
+    maxBounce: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+--- !u!54 &422511005
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422511002}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 56
+  m_CollisionDetection: 0
+--- !u!23 &422511006
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422511002}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 92497ef11fe3c4ee29a127e7baa79b43, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &422511007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422511002}
+  m_Material: {fileID: 13400000, guid: 31f4328919d694ec2a8a0f750fcee2d0, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &422511008
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422511002}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &422511009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422511002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a39c632110cf4046bfd1375d1db9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &429459917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1989,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1497262327}
+  - {fileID: 94820547}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
@@ -1928,7 +2246,7 @@ GameObject:
   - 65: {fileID: 564658884}
   - 23: {fileID: 564658883}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1941,8 +2259,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 564658881}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.35000002, y: -.860000014, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1681005659}
   m_RootOrder: 0
@@ -2054,6 +2372,179 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 570688334}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &601039532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 601039536}
+  - 114: {fileID: 601039533}
+  m_Layer: 10
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &601039533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601039532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15bbc9aa62224de08603958801a3657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &601039536
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601039532}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.0999999, y: 6.61999989, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1171344929}
+  - {fileID: 1824287814}
+  - {fileID: 1600889231}
+  - {fileID: 601069138}
+  - {fileID: 1851381646}
+  - {fileID: 422511003}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+--- !u!1 &601069137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 601069138}
+  - 33: {fileID: 601069143}
+  - 65: {fileID: 601069142}
+  - 23: {fileID: 601069141}
+  - 54: {fileID: 601069140}
+  - 59: {fileID: 601069139}
+  - 114: {fileID: 601069144}
+  m_Layer: 10
+  m_Name: Left Arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &601069138
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601069137}
+  m_LocalRotation: {x: 0, y: 0, z: .537299693, w: .843391418}
+  m_LocalPosition: {x: -.578000009, y: .216999993, z: 0}
+  m_LocalScale: {x: .400000006, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 601039536}
+  m_RootOrder: 3
+--- !u!59 &601069139
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601069137}
+  m_ConnectedBody: {fileID: 1171344930}
+  m_Anchor: {x: 0, y: -.349999994, z: 0}
+  m_Axis: {x: 0, y: 0, z: -1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -.463630766, y: .0824838206, z: 0}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -40
+    max: 0
+    minBounce: 0
+    maxBounce: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+--- !u!54 &601069140
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601069137}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 56
+  m_CollisionDetection: 0
+--- !u!23 &601069141
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601069137}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 92497ef11fe3c4ee29a127e7baa79b43, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &601069142
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601069137}
+  m_Material: {fileID: 13400000, guid: 31f4328919d694ec2a8a0f750fcee2d0, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &601069143
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601069137}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &601069144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601069137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a39c632110cf4046bfd1375d1db9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &628744415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,7 +2764,7 @@ GameObject:
   - 65: {fileID: 740780883}
   - 23: {fileID: 740780882}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2286,8 +2777,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740780880}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1231038370}
   m_RootOrder: 0
@@ -2411,7 +2902,7 @@ GameObject:
   - 54: {fileID: 758206825}
   - 59: {fileID: 758206824}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2454,7 +2945,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -2467,7 +2958,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 758206822}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -2489,7 +2980,7 @@ MonoBehaviour:
   flipperType: 0
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 4
+  pointValue: 1
   torque: 150
 --- !u!1 &772043306
 GameObject:
@@ -2572,7 +3063,7 @@ GameObject:
   - 65: {fileID: 788372792}
   - 23: {fileID: 788372791}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2585,8 +3076,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 788372789}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.35000002, y: -.860000014, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 14523254}
   m_RootOrder: 0
@@ -2702,7 +3193,7 @@ GameObject:
   - 54: {fileID: 904722115}
   - 59: {fileID: 904722114}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2735,7 +3226,7 @@ MonoBehaviour:
   flipperType: 1
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 10
+  pointValue: 1
   torque: 150
 --- !u!59 &904722114
 HingeJoint:
@@ -2761,7 +3252,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -2774,7 +3265,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 904722111}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -2794,7 +3285,7 @@ GameObject:
   - 65: {fileID: 935668445}
   - 23: {fileID: 935668444}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2807,8 +3298,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 935668442}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.35000002, y: -.860000014, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2002230338}
   m_RootOrder: 0
@@ -2881,6 +3372,72 @@ Transform:
   - {fileID: 371419779}
   m_Father: {fileID: 1223059329}
   m_RootOrder: 3
+--- !u!1 &983674643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 983674644}
+  - 222: {fileID: 983674646}
+  - 114: {fileID: 983674645}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &983674644
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983674643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 94820547}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -4.30000019}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &983674645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983674643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 51cfbc60c9edd4675b428de7624ef72b, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: RESET
+--- !u!222 &983674646
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983674643}
 --- !u!1 &1007080133
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,7 +3450,7 @@ GameObject:
   - 65: {fileID: 1007080136}
   - 23: {fileID: 1007080135}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2906,8 +3463,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1007080133}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.35000002, y: -.860000014, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1735173411}
   m_RootOrder: 0
@@ -2962,7 +3519,7 @@ GameObject:
   - 54: {fileID: 1021963762}
   - 59: {fileID: 1021963761}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3005,7 +3562,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -3018,7 +3575,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1021963759}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -3040,7 +3597,7 @@ MonoBehaviour:
   flipperType: 1
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 4
+  pointValue: 1
   torque: 150
 --- !u!1 &1036853396
 GameObject:
@@ -3054,7 +3611,7 @@ GameObject:
   - 54: {fileID: 1036853399}
   - 59: {fileID: 1036853398}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3097,7 +3654,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -3110,7 +3667,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1036853396}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -3132,7 +3689,7 @@ MonoBehaviour:
   flipperType: 1
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 2
+  pointValue: 1
   torque: 150
 --- !u!1 &1038490433
 GameObject:
@@ -3316,7 +3873,7 @@ GameObject:
   - 65: {fileID: 1050039189}
   - 23: {fileID: 1050039188}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3329,8 +3886,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1050039186}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1036853397}
   m_RootOrder: 0
@@ -3454,7 +4011,7 @@ GameObject:
   - 54: {fileID: 1103995674}
   - 59: {fileID: 1103995673}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3497,7 +4054,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -3510,7 +4067,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1103995671}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -3532,7 +4089,7 @@ MonoBehaviour:
   flipperType: 1
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 8
+  pointValue: 1
   torque: 150
 --- !u!1 &1105573080
 GameObject:
@@ -3574,7 +4131,7 @@ GameObject:
   - 65: {fileID: 1123638085}
   - 23: {fileID: 1123638084}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3587,8 +4144,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1123638082}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1752476150}
   m_RootOrder: 0
@@ -3869,6 +4426,124 @@ Transform:
   - {fileID: 646007802}
   m_Father: {fileID: 327108989}
   m_RootOrder: 2
+--- !u!1 &1171344928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1171344929}
+  - 33: {fileID: 1171344933}
+  - 65: {fileID: 1171344932}
+  - 23: {fileID: 1171344931}
+  - 54: {fileID: 1171344930}
+  - 114: {fileID: 1171344934}
+  - 114: {fileID: 1171344935}
+  m_Layer: 10
+  m_Name: Torso
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1171344929
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171344928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.0299999993, z: 0}
+  m_LocalScale: {x: .562499881, y: 1.20125008, z: 1}
+  m_Children: []
+  m_Father: {fileID: 601039536}
+  m_RootOrder: 0
+--- !u!54 &1171344930
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171344928}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 56
+  m_CollisionDetection: 0
+--- !u!23 &1171344931
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171344928}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 92497ef11fe3c4ee29a127e7baa79b43, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1171344932
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171344928}
+  m_Material: {fileID: 13400000, guid: 31f4328919d694ec2a8a0f750fcee2d0, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1171344933
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171344928}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1171344934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171344928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80094ef0954844c02ac3b8afb3083612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useFixedUpdate: 1
+  xFollow: 0
+  yFollow: 1
+  xClampEnabled: 0
+  yClampEnabled: 1
+  xClamp: {x: 0, y: 0}
+  yClamp: {x: -141.899994, y: 7.82000017}
+  smoothTime: .100000001
+  cam: {fileID: 1385223555}
+--- !u!114 &1171344935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171344928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a39c632110cf4046bfd1375d1db9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1223059328
 GameObject:
   m_ObjectHideFlags: 0
@@ -3918,7 +4593,7 @@ GameObject:
   - 54: {fileID: 1231038372}
   - 59: {fileID: 1231038371}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3961,7 +4636,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -3974,7 +4649,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1231038369}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -3996,7 +4671,7 @@ MonoBehaviour:
   flipperType: 1
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 7
+  pointValue: 1
   torque: 150
 --- !u!1 &1232136561
 GameObject:
@@ -4479,7 +5154,7 @@ GameObject:
   - 65: {fileID: 1306955945}
   - 23: {fileID: 1306955944}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4492,8 +5167,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1306955942}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 904722112}
   m_RootOrder: 0
@@ -4617,7 +5292,7 @@ GameObject:
   - 54: {fileID: 1319905396}
   - 59: {fileID: 1319905395}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4650,7 +5325,7 @@ MonoBehaviour:
   flipperType: 0
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 10
+  pointValue: 1
   torque: 150
 --- !u!59 &1319905395
 HingeJoint:
@@ -4676,7 +5351,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -4689,7 +5364,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1319905392}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -4875,7 +5550,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1385223551}
   m_LocalRotation: {x: .129409552, y: .129409552, z: -.0170370936, w: .982962966}
-  m_LocalPosition: {x: -2.5999999, y: 7.82000017, z: -10}
+  m_LocalPosition: {x: -2.5999999, y: 7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4892,7 +5567,7 @@ GameObject:
   - 65: {fileID: 1412263950}
   - 23: {fileID: 1412263949}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4905,8 +5580,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1412263947}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.27999997, y: -.810000002, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 758206823}
   m_RootOrder: 0
@@ -5379,7 +6054,7 @@ GameObject:
   - 65: {fileID: 1487722615}
   - 23: {fileID: 1487722614}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5392,8 +6067,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1487722612}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.35000002, y: -.860000014, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 33833850}
   m_RootOrder: 0
@@ -5531,6 +6206,134 @@ Transform:
   - {fileID: 1259536502}
   m_Father: {fileID: 899003837}
   m_RootOrder: 2
+--- !u!1 &1600889230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1600889231}
+  - 33: {fileID: 1600889236}
+  - 65: {fileID: 1600889235}
+  - 23: {fileID: 1600889234}
+  - 54: {fileID: 1600889233}
+  - 59: {fileID: 1600889232}
+  - 114: {fileID: 1600889237}
+  m_Layer: 10
+  m_Name: Right Arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1600889231
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600889230}
+  m_LocalRotation: {x: 0, y: 0, z: -.537299693, w: .843391418}
+  m_LocalPosition: {x: .578000009, y: .216999993, z: 0}
+  m_LocalScale: {x: .400000006, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 601039536}
+  m_RootOrder: 2
+--- !u!59 &1600889232
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600889230}
+  m_ConnectedBody: {fileID: 1171344930}
+  m_Anchor: {x: 0, y: -.349999994, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: .463630766, y: .0824838206, z: 0}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -40
+    max: 0
+    minBounce: 0
+    maxBounce: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+--- !u!54 &1600889233
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600889230}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 56
+  m_CollisionDetection: 0
+--- !u!23 &1600889234
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600889230}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 92497ef11fe3c4ee29a127e7baa79b43, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1600889235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600889230}
+  m_Material: {fileID: 13400000, guid: 31f4328919d694ec2a8a0f750fcee2d0, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1600889236
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600889230}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1600889237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600889230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a39c632110cf4046bfd1375d1db9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1622693880
 GameObject:
   m_ObjectHideFlags: 0
@@ -5750,7 +6553,7 @@ GameObject:
   - 65: {fileID: 1647061659}
   - 23: {fileID: 1647061658}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5763,8 +6566,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1647061656}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1798688081}
   m_RootOrder: 0
@@ -5888,7 +6691,7 @@ GameObject:
   - 54: {fileID: 1681005661}
   - 59: {fileID: 1681005660}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5931,7 +6734,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -5944,7 +6747,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1681005658}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -5966,7 +6769,7 @@ MonoBehaviour:
   flipperType: 0
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 6
+  pointValue: 1
   torque: 150
 --- !u!1 &1681610971
 GameObject:
@@ -5980,7 +6783,7 @@ GameObject:
   - 65: {fileID: 1681610974}
   - 23: {fileID: 1681610973}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5993,8 +6796,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1681610971}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.35000002, y: -.860000014, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 117289973}
   m_RootOrder: 0
@@ -6079,7 +6882,7 @@ GameObject:
   - 54: {fileID: 1735173413}
   - 59: {fileID: 1735173412}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6122,7 +6925,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -6135,7 +6938,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1735173410}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -6157,7 +6960,7 @@ MonoBehaviour:
   flipperType: 0
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 2
+  pointValue: 1
   torque: 150
 --- !u!1 &1742820461
 GameObject:
@@ -6240,7 +7043,7 @@ GameObject:
   - 54: {fileID: 1752476152}
   - 59: {fileID: 1752476151}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6283,7 +7086,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -6296,7 +7099,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1752476149}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -6318,7 +7121,7 @@ MonoBehaviour:
   flipperType: 1
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 3
+  pointValue: 1
   torque: 150
 --- !u!1 &1768362501
 GameObject:
@@ -6470,7 +7273,7 @@ GameObject:
   - 54: {fileID: 1798688083}
   - 59: {fileID: 1798688082}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6513,7 +7316,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -6526,7 +7329,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1798688080}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -6548,8 +7351,137 @@ MonoBehaviour:
   flipperType: 1
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 5
+  pointValue: 1
   torque: 150
+--- !u!1 &1824287813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1824287814}
+  - 33: {fileID: 1824287819}
+  - 136: {fileID: 1824287818}
+  - 23: {fileID: 1824287817}
+  - 54: {fileID: 1824287816}
+  - 59: {fileID: 1824287815}
+  - 114: {fileID: 1824287820}
+  m_Layer: 10
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1824287814
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824287813}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+  m_LocalPosition: {x: 0, y: 1.04900002, z: 0}
+  m_LocalScale: {x: 1.20000005, y: .5, z: 1.20000005}
+  m_Children: []
+  m_Father: {fileID: 601039536}
+  m_RootOrder: 1
+--- !u!59 &1824287815
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824287813}
+  m_ConnectedBody: {fileID: 1171344930}
+  m_Anchor: {x: 0, y: 0, z: .400000006}
+  m_Axis: {x: 0, y: 1, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: .498647392, z: -5.72204613e-08}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -5
+    max: 5
+    minBounce: 0
+    maxBounce: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+--- !u!54 &1824287816
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824287813}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 56
+  m_CollisionDetection: 0
+--- !u!23 &1824287817
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824287813}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 92497ef11fe3c4ee29a127e7baa79b43, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!136 &1824287818
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824287813}
+  m_Material: {fileID: 13400000, guid: 31f4328919d694ec2a8a0f750fcee2d0, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1824287819
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824287813}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1824287820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824287813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a39c632110cf4046bfd1375d1db9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1841344813
 GameObject:
   m_ObjectHideFlags: 0
@@ -6562,7 +7494,7 @@ GameObject:
   - 54: {fileID: 1841344816}
   - 59: {fileID: 1841344815}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6605,7 +7537,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -6618,7 +7550,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1841344813}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -6642,6 +7574,134 @@ MonoBehaviour:
   flipCooldown: .200000003
   pointValue: 1
   torque: 150
+--- !u!1 &1851381645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1851381646}
+  - 33: {fileID: 1851381651}
+  - 65: {fileID: 1851381650}
+  - 23: {fileID: 1851381649}
+  - 54: {fileID: 1851381648}
+  - 59: {fileID: 1851381647}
+  - 114: {fileID: 1851381652}
+  m_Layer: 10
+  m_Name: Right Leg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1851381646
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851381645}
+  m_LocalRotation: {x: 0, y: 0, z: -.933580458, w: .35836786}
+  m_LocalPosition: {x: .444000006, y: -.866999984, z: 0}
+  m_LocalScale: {x: .400000036, y: 1.25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 601039536}
+  m_RootOrder: 4
+--- !u!59 &1851381647
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851381645}
+  m_ConnectedBody: {fileID: 1171344930}
+  m_Anchor: {x: 0, y: -.400000006, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: .194550872, y: -.387452722, z: 0}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -10
+    max: 10
+    minBounce: 0
+    maxBounce: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+--- !u!54 &1851381648
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851381645}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 56
+  m_CollisionDetection: 0
+--- !u!23 &1851381649
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851381645}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 92497ef11fe3c4ee29a127e7baa79b43, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1851381650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851381645}
+  m_Material: {fileID: 13400000, guid: 31f4328919d694ec2a8a0f750fcee2d0, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1851381651
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851381645}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1851381652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851381645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a39c632110cf4046bfd1375d1db9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1853935418
 GameObject:
   m_ObjectHideFlags: 0
@@ -6792,7 +7852,7 @@ GameObject:
   - 65: {fileID: 1861123045}
   - 23: {fileID: 1861123044}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6805,8 +7865,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1861123042}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1103995672}
   m_RootOrder: 0
@@ -7099,7 +8159,7 @@ GameObject:
   - 54: {fileID: 1967563406}
   - 59: {fileID: 1967563405}
   m_Layer: 8
-  m_Name: Right Flipper
+  m_Name: Right Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7142,7 +8202,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -7155,7 +8215,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1967563403}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -7177,7 +8237,7 @@ MonoBehaviour:
   flipperType: 1
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 6
+  pointValue: 1
   torque: 150
 --- !u!1 &1972533454
 GameObject:
@@ -7260,7 +8320,7 @@ GameObject:
   - 54: {fileID: 1983403078}
   - 59: {fileID: 1983403077}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7290,7 +8350,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -7303,7 +8363,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1983403076}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -7325,7 +8385,7 @@ MonoBehaviour:
   flipperType: 0
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 5
+  pointValue: 1
   torque: 150
 --- !u!4 &1983403080
 Transform:
@@ -7352,7 +8412,7 @@ GameObject:
   - 65: {fileID: 1993379213}
   - 23: {fileID: 1993379212}
   m_Layer: 8
-  m_Name: Flipper Object Right
+  m_Name: Right Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7365,8 +8425,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1993379210}
   m_LocalRotation: {x: 0, y: 0, z: .288673282, w: .95742768}
-  m_LocalPosition: {x: -.899999976, y: -1, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1021963760}
   m_RootOrder: 0
@@ -7490,7 +8550,7 @@ GameObject:
   - 54: {fileID: 2002230340}
   - 59: {fileID: 2002230339}
   m_Layer: 8
-  m_Name: Left Flipper
+  m_Name: Left Flipper Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7533,7 +8593,7 @@ HingeJoint:
   m_UseLimits: 1
   m_Limits:
     min: 0
-    max: 55
+    max: 80
     minBounce: 0
     maxBounce: .5
   m_BreakForce: Infinity
@@ -7546,7 +8606,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2002230337}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -7568,7 +8628,7 @@ MonoBehaviour:
   flipperType: 0
   pointCooldown: .200000003
   flipCooldown: .200000003
-  pointValue: 7
+  pointValue: 1
   torque: 150
 --- !u!1 &2005975180
 GameObject:
@@ -7681,7 +8741,7 @@ GameObject:
   - 65: {fileID: 2023940312}
   - 23: {fileID: 2023940311}
   m_Layer: 8
-  m_Name: Flipper Object Left
+  m_Name: Left Flipper Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7694,8 +8754,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023940309}
   m_LocalRotation: {x: 0, y: 0, z: -.291600704, w: .956540167}
-  m_LocalPosition: {x: 1.27999997, y: -.810000002, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: -.5, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1319905393}
   m_RootOrder: 0

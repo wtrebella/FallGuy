@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 	public int score {get; private set;}
 
 	void Awake() {
+		Application.targetFrameRate = 60;
 		score = 0;
 		instance = this;
 	}
@@ -24,6 +25,10 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.R)) Application.LoadLevel("GameScene");
+		if (Input.GetKeyDown(KeyCode.R)) RestartGame();
+	}
+
+	public void RestartGame() {
+		Application.LoadLevel("GameScene");
 	}
 }

@@ -219,6 +219,7 @@
      <Compile Include="Assets\_FallGuy\Scripts\Flipper.cs" />
      <Compile Include="Assets\_FallGuy\Scripts\GameManager.cs" />
      <Compile Include="Assets\_FallGuy\Scripts\Player.cs" />
+     <Compile Include="Assets\_FallGuy\Scripts\PlayerPiece.cs" />
      <None Include="Assets\NGUI\ReadMe - 3.8.0.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
